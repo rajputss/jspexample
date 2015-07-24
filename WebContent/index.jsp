@@ -14,6 +14,13 @@
 		Date todaysDate = new Date();
 		System.out.println("Today's date  = " + todaysDate);
 		
+		String firstName = request.getParameter("fn");
+		String lastName = request.getParameter("ln");
+		
+		out.println("Hi " + lastName + " , " + firstName);
+	%>
+	
+	<%
 		out.print("Today's date  = " + todaysDate);
 	%>
 </body>
